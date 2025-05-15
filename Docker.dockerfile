@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y snapd sudo
 
 # Criar um usuário não-root e definir uma senha
 RUN useradd -m -s /bin/bash user && \
-    echo "user:senha123" | chpasswd && \
+    echo "user:____" | chpasswd && \
     echo "user ALL=(ALL) ALL" >> /etc/sudoers
 
 # Alternar para o usuário não-root
